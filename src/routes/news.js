@@ -62,7 +62,7 @@ newsRouter.get('/Sport', async (req, res) => {
     }
 })
 
-newsRouter.get('/Enter', async (req, res) => {
+newsRouter.get('/Entertainment', async (req, res) => {
     try {
         const newsAPI = await axios.get('https://api.newscatcherapi.com/v2/search?q=entertainment&countries=EN,VN&page_size=15', option)
         articlesList = newsAPI.data.articles;
@@ -80,7 +80,7 @@ newsRouter.get('/Enter', async (req, res) => {
     }
 })
 
-newsRouter.get('', async (req, res) => {
+newsRouter.get('/World', async (req, res) => {
     try {
         const newsAPI = await axios.get('https://api.newscatcherapi.com/v2/search?q=popular&countries=SG,HK,ID&page_size=6', option)
         articlesList = newsAPI.data.articles;
@@ -134,7 +134,7 @@ newsRouter.get('/Asia', async (req, res) => {
     }
 })
 
-newsRouter.get('/Ant', async (req, res) => {
+newsRouter.get('/Antarctica', async (req, res) => {
     try {
         const newsAPI = await axios.get('https://api.newscatcherapi.com/v2/search?q=Ukraine&countries=NZ,FR,IN&page_size=15', option)
         articlesList = newsAPI.data.articles;
@@ -211,7 +211,7 @@ newsRouter.get('/Europe', async (req, res) => {
     }
 })
 
-newsRouter.get('/NA', async (req, res) => {
+newsRouter.get('/NorthAmerica', async (req, res) => {
     try {
         const newsAPI = await axios.get('https://api.newscatcherapi.com/v2/search?q=Ukraine&countries=SA&page_size=15', option)
         articlesList = newsAPI.data.articles;
@@ -231,7 +231,7 @@ newsRouter.get('/NA', async (req, res) => {
 })
 
 
-newsRouter.get('/SA', async (req, res) => {
+newsRouter.get('/SouthAmerica', async (req, res) => {
     try {
         const newsAPI = await axios.get('https://api.newscatcherapi.com/v2/search?q=Car&countries=MZ,SA&page_size=15', option)
         articlesList = newsAPI.data.articles;
@@ -250,7 +250,7 @@ newsRouter.get('/SA', async (req, res) => {
     }
 })
 
-newsRouter.get('/Aus', async (req, res) => {
+newsRouter.get('/Australia', async (req, res) => {
     try {
         const newsAPI = await axios.get('https://api.newscatcherapi.com/v2/search?q=Car&countries=NZ,AUS&page_size=15', option)
         articlesList = newsAPI.data.articles;
