@@ -5,20 +5,12 @@ const cors = require("cors");
 const path = require('path');
 const cookieSession = require('cookie-session');
 const bcrypt = require('bcrypt');
-const dbConnection = require('./database');
 const { body, validationResult } = require('express-validator');
 const socketio = require("socket.io");
 
 const app = express()
-const port = 5000
 app.use(express.urlencoded({ extended: false }));
 
-var MongoClient = require("mongodb").MongoClient;
-MongoClient.connect("mongodb://localhost:27017", {useNewUrlParser: true},
-    function(error, client){
-    var blog = client.db("blog");
-    console.log("DB connected");
-    });
 
 const server = app.listen(process.env.PORT || 5000, () => {
         console.log("server is running...");
