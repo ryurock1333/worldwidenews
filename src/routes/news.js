@@ -80,7 +80,7 @@ newsRouter.get('/Entertainment', async (req, res) => {
     }
 })
 
-newsRouter.get('/World', async (req, res) => {
+newsRouter.get('/', async (req, res) => {
     try {
         const newsAPI = await axios.get('https://api.newscatcherapi.com/v2/search?q=popular&countries=SG,HK,ID&page_size=6', option)
         articlesList = newsAPI.data.articles;
