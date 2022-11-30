@@ -4,7 +4,7 @@ const axios = require('axios');
 const { application } = require('express');
 const option = {
     headers: {
-        "x-api-key": "7CT_fUUnb9S-h4h1PLcycDtIA6I4C_Ee0bkJYTPuofw"
+        "x-api-key": "2-5dX1ao1z-rhw40luD9qh8KxUWOAFag06ap44MKJUU"
     }
 }
 let articlesList = [];
